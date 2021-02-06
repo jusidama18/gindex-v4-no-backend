@@ -23,7 +23,9 @@ sudo apt-get install gdebi
 sudo apt-get install -f
 wget https://github.com/tonikelope/megabasterd/releases/download/v7.40/MegaBasterdLINUX_7.40_portable.zip
 unzip MegaBasterdLINUX_7.40_portable.zip
+cd /content/MegaBasterdLINUX
 chmod +x MegaBasterd.run
+cd /content/
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2

@@ -28,7 +28,6 @@ chmod +x MegaBasterd.run
 cd /content/
 wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
 tar -xf xdm-setup-7.2.11.tar.xz
-cd ~/xdm*
 sudo ./install.sh
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||

@@ -29,6 +29,8 @@ cd /content/
 wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
 tar -xf xdm-setup-7.2.11.tar.xz
 sudo ./install.sh
+sudo add-apt-repository ppa:atareao/telegram
+sudo apt update && sudo apt install telegram
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2

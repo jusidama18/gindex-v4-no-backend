@@ -19,6 +19,9 @@ sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo adduser John chrome-remote-desktop
+sudo add-apt-repository ppa:gnome3-team/gnome3
+sudo apt-get update && sudo apt-get install gnome-shell ubuntu-gnome-desktop
+sudo apt-get install gnome-session-flashback
 sudo apt-get install gdebi
 sudo apt-get install -f
 wget https://github.com/tonikelope/megabasterd/releases/download/v7.40/MegaBasterdLINUX_7.40_portable.zip

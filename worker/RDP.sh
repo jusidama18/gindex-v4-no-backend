@@ -27,9 +27,12 @@ unzip MegaBasterdLINUX_7.40_portable.zip
 cd /content/MegaBasterdLINUX
 chmod +x MegaBasterd.run
 cd /content/
+mkdir xdm
+cd /content/xdm/
 wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
 tar -xf xdm-setup-7.2.11.tar.xz
 sudo ./install.sh
+cd /content/
 sudo add-apt-repository -y ppa:atareao/telegram
 sudo apt update && sudo apt install telegram
 sudo add-apt-repository -y ppa:gnome3-team/gnome3

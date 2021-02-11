@@ -38,6 +38,9 @@ sudo apt update && sudo apt install telegram
 sudo add-apt-repository -y ppa:gnome3-team/gnome3
 sudo apt-get update && sudo apt-get install gnome-shell ubuntu-gnome-desktop 
 sudo apt-get install gnome-session-flashback
+sudo apt install ffmpeg
+sudo add-apt-repository -y ppa:obsproject/obs-studio
+sudo apt install obs-studio
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2

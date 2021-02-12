@@ -33,7 +33,6 @@ wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.t
 tar -xf xdm-setup-7.2.11.tar.xz
 sudo ./install.sh
 cd /content/
-sudo dpkg --add-architecture i386
 sudo apt-get install libc-ares2
 sudo add-apt-repository -y ppa:atareao/telegram
 sudo apt update && sudo apt install telegram
@@ -44,6 +43,7 @@ sudo apt install ffmpeg
 sudo add-apt-repository -y ppa:obsproject/obs-studio
 sudo apt install obs-studio
 sudo apt-get install -f
+sudo dpkg --add-architecture i386
 sudo apt-get update
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||

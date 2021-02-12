@@ -43,6 +43,7 @@ sudo apt-get install gnome-session-flashback
 sudo apt install ffmpeg
 sudo add-apt-repository -y ppa:obsproject/obs-studio
 sudo apt install obs-studio
+sudo apt-get install -f
 sudo apt-get update
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||

@@ -23,6 +23,9 @@ sudo apt-get install vlc
 sudo apt-get install gdebi
 sudo apt-get install -f
 wget https://github.com/tonikelope/megabasterd/releases/download/v7.40/MegaBasterdLINUX_7.40_portable.zip
+sudo apt-get install gnome-system-monitor
+sudo apt-get install xfce4-terminal
+sudo update-alternatives --config x-terminal-emulator
 unzip MegaBasterdLINUX_7.40_portable.zip
 cd /content/MegaBasterdLINUX
 chmod +x MegaBasterd.run

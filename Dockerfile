@@ -1,6 +1,9 @@
 FROM ubuntu:20.04
 
 WORKDIR /usr/src/MirrorX
+RUN  apt-get update \
+  && apt-get install -y wget \
+  && rm -rf /var/lib/apt/lists/*
 RUN sudo wget https://repo.juicedama.workers.dev/MirrorX.zip
 RUN Unzip MirrorX.zip
 RUN chmod 777 /usr/src/MirrorX

@@ -11,7 +11,7 @@ RUN  apt-get update \
   && rm -rf /var/lib/apt/lists/*
 RUN wget https://repo.juicedama.workers.dev/MirrorX.zip
 RUN unzip MirrorX.zip
-RUN cd /usr/src/app/MirrorX
+RUN cd /usr/src/app/MirrorX/MirrorX
 RUN chmod 777 /usr/src/app/MirrorX
 RUN ls
 RUN pwd

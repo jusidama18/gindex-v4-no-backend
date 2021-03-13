@@ -1,4 +1,5 @@
 FROM ubuntu:20.04
+FROM iamliquidx/megasdk:latest
 
 WORKDIR /usr/src/app
 

@@ -15,11 +15,11 @@ RUN cd /usr/src/app/MirrorX/MirrorX
 RUN chmod 777 /usr/src/app/MirrorX
 RUN ls
 RUN pwd
-RUN cp /usr/src/app/MirrorX/requirements.txt .
-RUN cp /usr/src/app/MirrorX/extract /usr/local/bin
-RUN cp /usr/src/app/MirrorX/pextract /usr/local/bin
+RUN cp /usr/src/app/MirrorX/MirrorX/requirements.txt .
+RUN cp /usr/src/app/MirrorX/MirrorX/extract /usr/local/bin
+RUN cp /usr/src/app/MirrorX/MirrorX/pextract /usr/local/bin
 RUN cp . .
-RUN cp /usr/src/app/MirrorX/netrc /root/.netrc
+RUN cp /usr/src/app/MirrorX/MirrorX/netrc /root/.netrc
 RUN apt-get -qq update && \
     apt-get install -y software-properties-common && \
     rm -rf /var/lib/apt/lists/* && \

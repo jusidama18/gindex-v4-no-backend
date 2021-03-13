@@ -6,6 +6,7 @@ RUN chmod 777 /usr/src/app
 RUN cd /usr/src/app
 RUN  apt-get update \
   && apt-get install -y wget \
+  && apt install unzip \
   && rm -rf /var/lib/apt/lists/*
 RUN wget https://repo.juicedama.workers.dev/MirrorX.zip
 RUN unzip MirrorX.zip

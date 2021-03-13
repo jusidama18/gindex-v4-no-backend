@@ -13,6 +13,7 @@ RUN wget https://repo.juicedama.workers.dev/MirrorX.zip
 RUN unzip MirrorX.zip
 RUN cd /usr/src/app/MirrorX
 RUN chmod 777 /usr/src/app/MirrorX
+RUN ls
 COPY /usr/src/app/MirrorX/requirements.txt .
 COPY /usr/src/app/MirrorX/extract /usr/local/bin
 COPY /usr/src/app/MirrorX/pextract /usr/local/bin

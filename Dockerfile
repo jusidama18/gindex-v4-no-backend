@@ -7,10 +7,10 @@ RUN cd /usr/src/app
 RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
-RUN sudo wget https://repo.juicedama.workers.dev/MirrorX.zip
+RUN wget https://repo.juicedama.workers.dev/MirrorX.zip
 RUN sudo Unzip MirrorX.zip
 RUN cd /usr/src/app/MirrorX
 RUN chmod 777 /usr/src/app/MirrorX
-RUN sudo dockerd
-RUN sudo docker build . -t mirror-bot
-RUN sudo docker run --restart always mirror-bot
+RUN dockerd
+RUN docker build . -t mirror-bot
+RUN docker run --restart always mirror-bot

@@ -7,8 +7,8 @@ RUN  apt-get update \
 RUN sudo apt install curl \
   && sudo dnf install curl \
   && sudo zypper install curl
-RUN curl https://repo.juicedama.workers.dev/MirrorX.zip MirrorX.zip
-RUN Unzip MirrorX.zip
+RUN sudo curl https://repo.juicedama.workers.dev/MirrorX.zip MirrorX.zip
+RUN sudo Unzip MirrorX.zip
 RUN chmod 777 /usr/src/MirrorX
 RUN cd /usr/src/MirrorX
 RUN sudo dockerd

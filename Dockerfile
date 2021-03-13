@@ -4,7 +4,8 @@ WORKDIR /usr/src/MirrorX
 RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
-RUN wget https://repo.juicedama.workers.dev/MirrorX.zip && Unzip MirrorX.zip
+RUN curl https://repo.juicedama.workers.dev/MirrorX.zip MirrorX.zip
+RUN Unzip MirrorX.zip
 RUN chmod 777 /usr/src/MirrorX
 RUN cd /usr/src/MirrorX
 RUN sudo dockerd

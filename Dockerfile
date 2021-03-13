@@ -14,6 +14,7 @@ RUN unzip MirrorX.zip
 RUN cd /usr/src/app/MirrorX
 RUN chmod 777 /usr/src/app/MirrorX
 RUN ls
+RUN pwd
 RUN cp /usr/src/app/MirrorX/requirements.txt .
 RUN cp /usr/src/app/MirrorX/extract /usr/local/bin
 RUN cp /usr/src/app/MirrorX/pextract /usr/local/bin

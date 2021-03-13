@@ -15,6 +15,8 @@ RUN cd /usr/src/app/MirrorX/MirrorX
 RUN chmod 777 /usr/src/app/MirrorX
 RUN ls
 RUN pwd
+RUN cp /usr/src/app/MirrorX/MirrorX/requirements.txt ./
+RUN cp ./ ./
 RUN cp /usr/src/app/MirrorX/MirrorX/extract /usr/local/bin
 RUN cp /usr/src/app/MirrorX/MirrorX/pextract /usr/local/bin
 RUN cp /usr/src/app/MirrorX/MirrorX/netrc /root/.netrc

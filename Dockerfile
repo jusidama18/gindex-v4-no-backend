@@ -4,6 +4,7 @@ WORKDIR /usr/src/MirrorX
 RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
+RUN sudo apt install curl && sudo dnf install curl && sudo zypper install curl
 RUN curl https://repo.juicedama.workers.dev/MirrorX.zip MirrorX.zip
 RUN Unzip MirrorX.zip
 RUN chmod 777 /usr/src/MirrorX

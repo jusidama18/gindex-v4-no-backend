@@ -13,11 +13,11 @@ RUN wget https://repo.juicedama.workers.dev/MirrorX.zip
 RUN unzip MirrorX.zip
 RUN cd /usr/src/app/MirrorX
 RUN chmod 777 /usr/src/app/MirrorX
-COPY requirements.txt .
-COPY extract /usr/local/bin
-COPY pextract /usr/local/bin
+COPY /usr/src/app/MirrorX/requirements.txt .
+COPY /usr/src/app/MirrorX/extract /usr/local/bin
+COPY /usr/src/app/MirrorX/pextract /usr/local/bin
 COPY . .
-COPY netrc /root/.netrc
+COPY /usr/src/app/MirrorX/netrc /root/.netrc
 RUN apt-get -qq update && \
     apt-get install -y software-properties-common && \
     rm -rf /var/lib/apt/lists/* && \

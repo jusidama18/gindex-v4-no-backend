@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 FROM iamliquidx/megasdk:latest
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/MirrorX
 
 RUN chmod 777 /usr/src/app
 RUN cd /usr/src/app

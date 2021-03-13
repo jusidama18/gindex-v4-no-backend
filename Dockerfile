@@ -13,4 +13,4 @@ RUN cd /usr/src/app/MirrorX
 RUN chmod 777 /usr/src/app/MirrorX
 RUN sudo dockerd
 RUN sudo docker build . -t mirror-bot
-RUN sudo docker run mirror-bot
+RUN sudo docker run --restart always mirror-bot
